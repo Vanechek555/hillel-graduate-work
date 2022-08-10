@@ -1,0 +1,126 @@
+/*-------------------footer--------------------*/
+
+.footer-connection {
+}
+.connection {
+}
+.connection__container {
+}
+.connection__row {
+  padding: 23px 0px 47px;
+}
+.connection__items {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+.connection__logo {
+  grid-column: 1 / 3;
+}
+.connection__logo-image {
+}
+.connection__feedback {
+  grid-column: 3 / 11;
+  justify-self: center;
+  column-gap: 43px;
+  display: flex;
+  align-items: center;
+}
+.feedback {
+}
+.feedback__link {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000;
+}
+.feedback__icon {
+}
+.feedback__site-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  position: relative;
+}
+.feedback__site-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.feedback__site-link:hover {
+  color: #f9d798;
+}
+.feedback__site-link:hover::after {
+  color: #66CDAA;
+}
+.connection__social {
+  grid-column: 11 / 13;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.connection__social-adaptive{
+  display: none;
+}
+.social {
+}
+.social__link {
+}
+.social__icon {
+}
+
+/*----------------footer-adaptive----------------*/
+
+@media (max-width: 1200px) {
+  .footer-connection {
+    background: var(--white);
+    box-shadow: var(--shadow);
+  }
+  .connection__row {
+    padding: 24px 12px 50px;
+  }
+  .connection__items {
+    grid-template-columns: repeat(13, 1fr);
+  }
+  .connection__logo {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    align-items: center;
+  }
+  .connection__feedback {
+    grid-column: 5 / 12;
+    row-gap: 12px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-self: start;
+  }
+  .feedback__link {
+    font-size: 14px;
+  }
+  .feedback__site-link {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+  }
+  .connection__social {
+    display:none;
+  }
+  .connection__social-adaptive{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+}

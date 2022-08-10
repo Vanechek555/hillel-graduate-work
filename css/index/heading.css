@@ -1,0 +1,30 @@
+/*-------------------heading--------------------*/
+
+.page-heading {
+}
+.heading {
+}
+.heading__container {
+}
+.heading__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 46px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 96px;
+}
+
+/*---------------heading-adaptive--------------*/
+
+@media (max-width: 1200px) {
+  .heading__title {
+    font-size: 32px;
+  }
+  .heading__title {
+    margin-bottom: 68px;
+  }
+}

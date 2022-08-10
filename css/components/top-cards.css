@@ -1,0 +1,32 @@
+/*---------------top-cards----------------*/
+
+.top-cards {
+}
+.top-cards__title {
+  font-size: 32px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--light-black);
+}
+.top-cards__title:not(:last-child) {
+  margin-bottom: 14px;
+}
+.top-cards__sub-title {
+  font-size: 22px;
+  line-height: 1.3;
+  color: var(--dark-grey);
+  max-width: 375px;
+}
+.top-cards__span {
+  position: relative;
+  padding-left: 35px;
+}
+.top-cards__span::before {
+  content: "";
+  background: url('../../img/cards/vector_icon.svg') 0 0 no-repeat;
+  width: 30px;
+  height: 27px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
